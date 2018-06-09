@@ -3,8 +3,8 @@ import React, {Fragment, Component} from 'react';
 class ContactForm extends Component{
     render(){
         return(
-            <Fragment className="contact-form">
-            <form>
+            <Fragment>
+            <form className="contact-form col-6">
             	<label>Your Name</label>
 					<input placeholder="First and Last Name" name="name" type="text"/>
 				<label>Your Email</label>

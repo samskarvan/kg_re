@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/app.css';
 import ContactForm from './contactForm';
 
 const App = () => (

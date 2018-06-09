@@ -81,4 +81,20 @@ li:hover{
     }
   }
 
+  /* --- Home --- */
+
+  .home-img{
+      background-color: #538CAC;
+      text-align: center;
+      height: 50vh;
+  }
  
+  .content{
+      margin: 2% 2%;
+  }
+
+  .tile{
+      width: 33%;
+      height: 40vh;
+      display: inline-block;
+  }

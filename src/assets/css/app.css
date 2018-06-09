@@ -1,43 +1,55 @@
-@font-face {
-    font-family: blocky;
-    src: url(../fonts/blocky.ttf);
+/* ---General Colors and Fonts--- */
+.sand{
+    background-color: #C9AB7F;
+}
+
+.black{
+    background-color: #000000;
+}
+
+.dark-grey{
+    background-color: #576260;
+}
+
+.flash-white{
+    background-color: #EEF3FA;
+}
+
+.rackley{
+    background-color: #538CAC;
 }
 
 body {
     margin: 0;
 }
 
-.app {
-    background-color: #000;
-    color: #fff;
-    font-family: blocky;
-    font-size: 30px;
-    padding: 50px;
-    text-align: center;
+.logo {
+    height: 100%;
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    width: 80%;
+    text-align: right;
 }
 
-.app .logo {
-    height: 200px;
+li{
+    display: inline-block;
+    margin: 2%;
+    color: #EEF3FA;
 }
 
-.app h1 {
-    text-shadow: 0 0 28px #61DAFB;
-    letter-spacing: 5px;
+li:hover{
+    color: #C9AB7F;
+    cursor: pointer;
 }
 
-.rotate {
-    animation: spin 10s linear infinite;
+.header{
+    height: 15vh;
+    padding: 0.5% 2%;
+    display: flex;
+    box-shadow: 1px 1px 5px;
 }
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 /* //////////----Contact Form-----////////// */
 
 .contact-form{
@@ -68,3 +80,5 @@ body {
       display: block
     }
   }
+
+ 

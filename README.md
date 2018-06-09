@@ -1,1 +1,0 @@
-#Student Grade Table with Node and React JS

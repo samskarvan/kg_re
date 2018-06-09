@@ -39,7 +39,7 @@ li{
     color: #EEF3FA;
 }
 
-li:hover{
+li:hover, .logo:hover{
     color: #C9AB7F;
     cursor: pointer;
 }
@@ -87,6 +87,7 @@ li:hover{
       background-color: #538CAC;
       text-align: center;
       height: 50vh;
+      box-shadow: 1px 1px 10px;
   }
  
   .content{
@@ -94,7 +95,16 @@ li:hover{
   }
 
   .tile{
-      width: 33%;
-      height: 40vh;
-      display: inline-block;
+    width: 35%;
+    height: 60vh;
+    margin: 1% .5%;
+    text-align: center;
+    padding: 2%;
+    box-shadow: 1px 1px 10px;
+    border: 0.1em solid #538CAC;
+  }
+
+  .services{
+      margin: auto;
+      display: flex;
   }

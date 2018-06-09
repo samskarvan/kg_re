@@ -17,6 +17,11 @@ class Home extends Component{
                     <div className="tile sand">two</div>
                     <div className="tile sand">three</div>
                 </div>
+
+                <div className="home-img">
+                    <h1>About Us.</h1>
+                    <p>lorem ipsum doler samet</p>
+                </div>
             </Fragment>
         )
     }

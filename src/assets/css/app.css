@@ -37,3 +37,34 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/* //////////----Contact Form-----////////// */
+
+.contact-form{
+    width: 100%
+  }
+  
+  .contact-form input{
+    width: 40%;
+    display: block
+  }
+  
+  .contact-form textarea{
+    width: 80%;
+    height: 20%;
+    display: block;
+    resize: none
+  }
+  
+  @media screen and (max-width: 600px) {
+    .contact-form input{
+      width: 100%;
+      display: block
+    }
+    
+    .contact-form textarea{
+      width: 100%;
+      height: 20%;
+      display: block
+    }
+  }

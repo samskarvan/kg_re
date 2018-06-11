@@ -11,7 +11,7 @@ class Header extends Component{
                 <ul>
                     <li><Link to='/real-estate' className="flash-white-text">Real Estate</Link></li>
                     <li><Link to='/communities' className="flash-white-text">Communities We Serve</Link></li>
-                    <li><Link to ='/about' className="flash-white-text"></Link></li>
+                    <li><Link to ='/about' className="flash-white-text">About</Link></li>
                     <li><Link to='/contact' className="flash-white-text">Contact</Link></li>
                 </ul>
             </div>

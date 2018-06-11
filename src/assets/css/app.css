@@ -19,6 +19,10 @@
     background-color: #538CAC;
 }
 
+.flash-white-text{
+    color: #EEF3FA;
+}
+
 body {
     margin: 0;
 }
@@ -33,15 +37,16 @@ ul {
     text-align: right;
 }
 
-li{
+li {
     display: inline-block;
     margin: 2%;
     color: #EEF3FA;
 }
 
-li:hover, .logo:hover{
+li:hover, a:hover, .logo:hover{
     color: #C9AB7F;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header, .footer{
@@ -57,8 +62,11 @@ li:hover, .logo:hover{
     margin: auto;
 }
 
+/* .social, .contact{
+    text-align: center;
+} */
 .social p, .contact p{
-    display: inline-flex;
+    display: inline;
 }
 /* //////////----Contact Form-----////////// */
 

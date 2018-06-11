@@ -44,11 +44,21 @@ li:hover, .logo:hover{
     cursor: pointer;
 }
 
-.header{
-    height: 15vh;
+.header, .footer{
+    height: 18vh;
     padding: 0.5% 2%;
+    margin-bottom: 0.5%;
     display: flex;
     box-shadow: 1px 1px 5px;
+}
+
+.footer {
+    text-align: center;
+    margin: auto;
+}
+
+.social p, .contact p{
+    display: inline-flex;
 }
 /* //////////----Contact Form-----////////// */
 

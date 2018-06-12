@@ -7,7 +7,7 @@ class Home extends Component{
     render(){
         return(
             <Fragment>
-                <div className="home-img">
+                <div className="home-img strands">
                     <h1>LOVE WHERE YOU LIVE.</h1>
                     <p>lorem ipsum doler samet</p>
                 </div>

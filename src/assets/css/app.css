@@ -23,6 +23,10 @@
     color: #EEF3FA;
 }
 
+.rackley-text{
+    color: #538CAC;
+}
+
 body {
     margin: 0;
 }
@@ -59,14 +63,21 @@ li:hover, a:hover, .logo:hover{
 
 .footer {
     text-align: center;
-    margin: auto;
+    height: 30vh;
+    padding: 3% 0;
+    margin-bottom: 0;
 }
 
-/* .social, .contact{
-    text-align: center;
-} */
+.social, .contact{
+   margin-top: 1%;
+}
 .social p, .contact p{
     display: inline;
+}
+
+.address{
+    border-left: 1px solid #C9AB7F;
+    border-right: 1px solid #C9AB7F;
 }
 /* //////////----Contact Form-----////////// */
 
@@ -104,7 +115,7 @@ li:hover, a:hover, .logo:hover{
   .home-img{
       background-color: #538CAC;
       text-align: center;
-      height: 50vh;
+      height: 80vh;
       box-shadow: 1px 1px 10px;
   }
  
@@ -125,4 +136,10 @@ li:hover, a:hover, .logo:hover{
   .services{
       margin: auto;
       display: flex;
+  }
+
+  .strands{
+      background-image: url('../images/strands.png');
+      background-repeat: no-repeat;
+      background-size: cover;
   }

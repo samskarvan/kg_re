@@ -4,18 +4,20 @@ class ContactForm extends Component{
     render(){
         return(
             <Fragment>
-            <form className="contact-form col-6">
-            	<label>Your Name</label>
-					<input placeholder="First and Last Name" name="name" type="text"/>
-				<label>Your Email</label>
-					<input placeholder="Email Address" name="email" type="text"/>
-			    <label>Subject</label>
-					<input placeholder="Subject" name="subject" type="text"/>
-				<label>Message</label>
-					<textarea placeholder="Message" name="message" type="text"></textarea>
-				<button>Submit</button>
-				</form>
-
+			<div className="contact-page flash-white">
+			<h1>Drop Us a Line!</h1>
+				<form className="contact-form sand col-6">
+					<label className="contact-label">Your Name</label>
+						<input placeholder="First and Last Name" name="name" type="text"/>
+					<label className="contact-label">Your Email</label>
+						<input placeholder="Email Address" name="email" type="text"/>
+					<label className="contact-label">Subject</label>
+						<input placeholder="Subject" name="subject" type="text"/>
+					<label className="contact-label">Message</label>
+						<textarea className="contact-label" placeholder="Message" name="message" type="text"></textarea>
+					<button className="dark-grey flash-white-text contact-btn">Submit</button>
+					</form>
+			</div>
             </Fragment>
         )
     }

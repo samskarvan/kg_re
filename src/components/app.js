@@ -9,7 +9,7 @@ import Home from './home';
 
 const App = () => (
     <div>
-        <div className="container-fluid"> 
+        <div className="flash-white container-fluid"> 
         <Header/>
         <div className="content">
             <Route exact path="/" component={Home}/>

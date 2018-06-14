@@ -106,15 +106,21 @@ li:hover, a:hover, .logo:hover{
 }
 
 .contact-btn:hover{
-    background-color: #538CAC;
+    background-color: #576260;
 }
 .contact-form{
     width: 100%;
     box-shadow: 1px 1px 10px;
     padding: 2%;
     height: 80vh;
+    display: inline-block;
   }
   
+  .map{
+    height: 80vh;
+    display: inline-block;
+    padding-top: 3%;
+  }
   .contact-form input{
     width: 100%;
     height: 10%;

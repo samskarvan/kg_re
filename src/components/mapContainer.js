@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -15,7 +15,7 @@ class SimpleMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+      <Fragment>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyDtnISxBNvKRzUlIu5U2DDqXJT7wu2d7CY' }}
           defaultCenter={this.props.center}
@@ -27,7 +27,7 @@ class SimpleMap extends Component {
             text={'KG'}
           />
         </GoogleMapReact>
-      </div>
+      </Fragment>
     );
   }
 }

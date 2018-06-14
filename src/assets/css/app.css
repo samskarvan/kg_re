@@ -90,7 +90,8 @@ li:hover, a:hover, .logo:hover{
 }
 
 .contact-page > h1{
-    margin: 0 0 2% 0;
+    /* margin: 0 0 2% 0; */
+    text-align: center;
 }
 .contact-label{
     margin-bottom:0; 

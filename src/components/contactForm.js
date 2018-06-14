@@ -5,7 +5,7 @@ class ContactForm extends Component{
         return(
             <Fragment>
 			<div className="contact-page flash-white">
-			<h1>Drop Us a Line!</h1>
+			<h1 className="col-12 mx-auto" >Let's Connect!</h1>
 				<form className="contact-form rackley col-6">
 					<label className="contact-label">Your Name</label>
 						<input placeholder="First and Last Name" name="name" type="text"/>

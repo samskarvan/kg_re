@@ -1,5 +1,5 @@
 import React, {Fragment, Component} from 'react';
-
+import Map from'./mapContainer';
 class ContactForm extends Component{
     render(){
         return(
@@ -17,6 +17,9 @@ class ContactForm extends Component{
 						<textarea className="contact-label" placeholder="Message" name="message" type="text"></textarea>
 					<button className="dark-grey flash-white-text contact-btn">Submit</button>
 					</form>
+			</div>
+			<div className="map">
+				<Map/>
 			</div>
             </Fragment>
         )

@@ -1,5 +1,5 @@
 import React, {Fragment, Component} from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import Logo from'../assets/images/logo.gif';
 
 class Header extends Component{
@@ -9,10 +9,10 @@ class Header extends Component{
                <span><Link to='/'><img className="logo" src={Logo}></img></Link></span>
                 
                 <ul>
-                    <li><Link to='/real-estate' className="flash-white-text">Real Estate</Link></li>
-                    <li><Link to='/communities' className="flash-white-text">Communities We Serve</Link></li>
-                    <li><Link to ='/about' className="flash-white-text">About</Link></li>
-                    <li><Link to='/contact' className="flash-white-text">Contact</Link></li>
+                    <li><NavLink to='/real-estate' activeClassName="sand-text" className="flash-white-text">Real Estate</NavLink></li>
+                    <li><NavLink to='/communities' className="flash-white-text">Communities We Serve</NavLink></li>
+                    <li><NavLink to ='/about' className="flash-white-text">About</NavLink></li>
+                    <li><NavLink to='/contact' className="flash-white-text">Contact</NavLink></li>
                 </ul>
             </div>
         )

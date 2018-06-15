@@ -6,7 +6,7 @@ import ContactForm from './contactForm';
 import Header from './header';
 import Footer from './footer';
 import Home from './home';
-
+import About from './about';
 
 const App = () => (
     <div>
@@ -16,7 +16,7 @@ const App = () => (
             <Route exact path="/" component={Home}/>
             <Route path="/contact" component={ContactForm}/>
             <Route path="/communities" component={ContactForm}/>
-            <Route path="/about" component={ContactForm}/>
+            <Route path="/about" component={About}/>
             <Route path="/real-estate" component={ContactForm}/>
         </div>
         <Footer/>

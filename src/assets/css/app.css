@@ -165,28 +165,101 @@ li:hover, a:hover, .logo:hover{
     box-shadow: 1px 1px 10px;
     padding: 18% 0 0 5%;  
   }
+
+  .about-content{
+      width: 50%;
+  }
+
+  .about-btn{
+    border: .01em solid white;
+    border-radius: 2%;
+    cursor: pointer;
+    width: 20%;
+    height: 20%;
+  }
  
+  .about-btn:hover, .tile-btn:hover{
+    background-color: #576260;
+  }
   .content{
       margin: 2% 2%;
   }
 
   .tile{
-    width: 35%;
+    /* width: 35%; */
     height: 70vh;
     margin: 1% .5%;
     text-align: center;
     padding: 2%;
     box-shadow: 1px 1px 10px;
     border: 0.1em solid #538CAC;
+    display: inline-block;    
   }
-
+.tile-btn{
+    border: .01em solid white;
+    border-radius: 2%;
+    cursor: pointer;
+    width: 80%;
+    height: 8%;
+}
   .services{
       margin: auto;
-      display: flex;
+      /* display: flex; */
   }
 
   .strands{
       background-image: url('../images/strands.png');
       background-repeat: no-repeat;
       background-size: cover;
+  }
+
+  /* ---About--- */
+
+  .about-page{
+      padding: 2%;
+  }
+  /* .bio-container{
+    display: flex;
+  } */
+
+.bio{
+    height: 70vh;
+    margin: 1%;
+    text-align: center;
+    padding: 2%;
+    box-shadow: 1px 1px 10px;
+    border: 0.1em solid #538CAC;
+    display: inline-block; 
+    cursor: pointer;
+}
+
+.bio-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #576260;
+}
+
+.bio-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bio:hover .bio-overlay{
+    opacity: 1;
+}
+  .align-center{
+      text-align: center;
   }

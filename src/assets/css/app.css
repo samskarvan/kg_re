@@ -49,6 +49,7 @@ li {
     display: inline-block;
     margin: 2%;
     color: #EEF3FA;
+    font-size: 1.3em;
 }
 
 li:hover, a:hover, .logo:hover{
@@ -90,7 +91,7 @@ li:hover, a:hover, .logo:hover{
 }
 
 .contact-page > h1{
-    /* margin: 0 0 2% 0; */
+    margin: 0 0 2% 0;
     text-align: center;
 }
 .contact-label{
@@ -117,10 +118,12 @@ li:hover, a:hover, .logo:hover{
     display: inline-block;
   }
   
+  .map-contact-container{
+      display: flex;
+  }
   .map{
     height: 80vh;
     display: inline-block;
-    padding-top: 3%;
   }
   .contact-form input{
     width: 100%;
@@ -186,14 +189,14 @@ li:hover, a:hover, .logo:hover{
   }
 
   .tile{
-    width: 35%;
+    width: 32%;
     height: 70vh;
     margin: 1% .5%;
     text-align: center;
     padding: 2%;
     box-shadow: 1px 1px 10px;
     border: 0.1em solid #538CAC;
-    display: inline-block;    
+    display: inline-block;  
   }
 .tile-btn{
     border: .01em solid white;
@@ -204,7 +207,7 @@ li:hover, a:hover, .logo:hover{
 }
   .services{
       margin: auto;
-      /* display: flex; */
+      display: flex;
   }
 
   .strands{

@@ -6,6 +6,7 @@ class ContactForm extends Component{
             <Fragment>
 			<div className="contact-page flash-white">
 			<h1 className="col-12 mx-auto" >Let's Connect!</h1>
+				<div className="map-contact-container">
 				<form className="contact-form rackley col-6">
 					<label className="contact-label">Your Name</label>
 						<input placeholder="First and Last Name" name="name" type="text"/>
@@ -16,9 +17,10 @@ class ContactForm extends Component{
 					<label className="contact-label">Message</label>
 						<textarea className="contact-label" placeholder="Message" name="message" type="text"></textarea>
 					<button className="sand flash-white-text contact-btn">Submit</button>
-					</form>
+				  </form>
 					<div className="col-6 map">
 					<Map/>
+				</div>
 			</div>
 					</div>
             </Fragment>

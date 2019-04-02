@@ -1,32 +1,63 @@
-import React, {Fragment, Component} from 'react';
-import Map from'./mapContainer';
-class ContactForm extends Component{
-    render(){
-        return(
+import React, { Fragment, Component } from 'react'
+import Map from './mapContainer'
+import axios from 'axios'
+
+class ContactForm extends Component {
+    submitForm(e, values) {
+        e.preventdefault()
+        return async dispatch => {
+            try {
+                const response = await axios.post('/send_email', values)
+            } catch (err) {
+                console.log('there was an error', err)
+            }
+        }
+    }
+
+    render() {
+        return (
             <Fragment>
-			<div className="contact-page flash-white">
-			<h1 className="col-12 mx-auto" >Let's Connect!</h1>
-				<div className="map-contact-container">
-				<form className="contact-form rackley col-6">
-					<label className="contact-label">Your Name</label>
-						<input placeholder="First and Last Name" name="name" type="text"/>
-					<label className="contact-label">Your Email</label>
-						<input placeholder="Email Address" name="email" type="text"/>
-					<label className="contact-label">Subject</label>
-						<input placeholder="Subject" name="subject" type="text"/>
-					<label className="contact-label">Message</label>
-						<textarea className="contact-label" placeholder="Message" name="message" type="text"></textarea>
-					<button className="sand flash-white-text contact-btn">Submit</button>
-				  </form>
-					<div className="col-6 map">
-					<Map/>
-				</div>
-			</div>
-					</div>
+                <div className='contact-page flash-white'>
+                    <h1 className='col-12 mx-auto'>Let's Connect!</h1>
+                    <div className='map-contact-container'>
+                        <form className='contact-form rackley col-6'>
+                            <label className='contact-label'>Your Name</label>
+                            <input
+                                placeholder='First and Last Name'
+                                name='name'
+                                type='text'
+                            />
+                            <label className='contact-label'>Your Email</label>
+                            <input
+                                placeholder='Email Address'
+                                name='email'
+                                type='text'
+                            />
+                            <label className='contact-label'>Subject</label>
+                            <input
+                                placeholder='Subject'
+                                name='subject'
+                                type='text'
+                            />
+                            <label className='contact-label'>Message</label>
+                            <textarea
+                                className='contact-label'
+                                placeholder='Message'
+                                name='message'
+                                type='text'
+                            />
+                            <button className='sand flash-white-text contact-btn'>
+                                Submit
+                            </button>
+                        </form>
+                        <div className='col-6 map'>
+                            <Map />
+                        </div>
+                    </div>
+                </div>
             </Fragment>
         )
     }
 }
 
-
-export default ContactForm;
+export default ContactForm

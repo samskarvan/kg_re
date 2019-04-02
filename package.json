@@ -15,10 +15,13 @@
     "url": "https://github.com/samskarvan/kg_re.git"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.1.1",
+    "express": "^4.16.3",
     "font-awesome": "^4.7.0",
     "google-map-react": "^1.0.4",
+    "nodemailer": "^4.6.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
